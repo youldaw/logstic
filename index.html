@@ -3,7 +3,9 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
 		<link rel="stylesheet" type="text/css" href="libs/bootstrap5/bootstrap.min.css" media="screen">
-		<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" media="screen">
+		<link rel="stylesheet icon" type="text/css" href="fonts/RetniSans/stylesheet.css" media="screen">
+		<link rel="stylesheet icon" type="text/css" href="fonts/Involve/stylesheet.css" media="screen">
+		<link rel="stylesheet icon" type="text/css" href="fonts/Arial/stylesheet.css" media="screen">
 		<link rel="stylesheet icon" type="text/css" href="css/style.css" media="screen">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="UTF-8">
@@ -13,17 +15,394 @@
 		<div class="wrapper">
 			<header class="header">
 				<div class="container">
-					<div class="row">
-
-					</div>
+					<nav class="navbar navbar-expand-lg">
+						<a class="navbar-brand" href="#!">
+							<svg width="90" height="24" viewBox="0 0 90 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M46.6076 2.57297C46.6076 1.25096 46.6226 1.22092 47.0584 0.860369L47.5093 0.499821H51.9427C54.9033 0.499821 56.8571 0.574935 57.8038 0.710141C58.5853 0.830323 59.5622 1.02562 59.983 1.16083C60.3888 1.31105 61.035 1.56644 61.4107 1.74672C61.7864 1.92699 62.4627 2.31759 62.9136 2.61804C63.3644 2.93352 64.1609 3.60955 64.6569 4.13535C65.1678 4.64613 65.799 5.42732 66.0846 5.83293C66.3551 6.25357 66.7609 6.98969 66.9713 7.48545C67.1967 7.9812 67.4371 8.65723 67.5273 8.98773C67.6175 9.31823 67.7678 9.99426 67.8579 10.49C67.9481 10.9858 68.0233 11.6768 68.0233 12.0374C68.0233 12.3829 67.9481 12.9838 67.873 13.3894C67.7828 13.78 67.6325 14.441 67.5423 14.8466C67.4522 15.2673 67.1967 16.0034 66.9863 16.4992C66.7609 16.9949 66.3551 17.746 66.0846 18.1517C65.799 18.5723 65.1678 19.3385 64.6569 19.8493C64.1609 20.375 63.3644 21.0511 62.9136 21.3666C62.4627 21.667 61.7413 22.0726 61.3356 22.2679C60.9148 22.4632 60.4639 22.6735 60.3136 22.7487C60.1784 22.8238 59.9229 22.8839 59.7576 22.8839C59.5922 22.8839 59.487 22.9289 59.5171 23.004C59.5472 23.0641 59.2616 23.1242 58.8859 23.1543C58.4952 23.1693 58.1495 23.2444 58.1044 23.3195C58.0593 23.3946 55.6247 23.4547 47.359 23.4998L46.6076 22.7036V18.1366C46.6076 13.78 46.6226 13.5697 46.9082 13.2542C47.1787 12.9688 47.359 12.9538 48.7116 12.9688C49.5532 12.9838 50.3347 13.0739 50.4699 13.1641C50.7104 13.3293 50.7404 13.6899 50.8156 19.3535L53.5207 19.3986C55.1588 19.4286 56.6316 19.3835 57.2779 19.2634C57.864 19.1732 58.7957 18.8577 59.3818 18.5873C60.0732 18.2568 60.7344 17.7761 61.2905 17.2203C61.7564 16.7395 62.3124 16.0184 62.5228 15.5978C62.7332 15.1922 63.0037 14.456 63.139 13.9903C63.2592 13.5096 63.3644 12.6082 63.3644 11.9923C63.3644 11.3764 63.2742 10.505 63.154 10.0844C63.0488 9.64874 62.7933 8.95768 62.613 8.53704C62.4176 8.13143 61.8766 7.38029 61.4107 6.88453C60.8546 6.31366 60.1633 5.78786 59.5171 5.45736C58.946 5.17193 58.1796 4.87147 57.8038 4.79636C57.4281 4.72124 54.8883 4.6311 52.1681 4.61608L52.0823 4.61501C47.3422 4.55598 47.192 4.55411 46.9082 4.24051C46.6527 3.9701 46.6076 3.71471 46.6076 2.57297Z" fill="black"/>
+								<path d="M31.2784 1.17589C31.6842 1.04068 32.5108 0.830362 33.0819 0.725202C33.7882 0.589996 35.6968 0.529905 38.8979 0.514882C42.6551 0.499859 43.7672 0.544928 44.0828 0.710179C44.3232 0.815339 44.5486 1.02566 44.6088 1.16086C44.6839 1.29607 44.729 1.9721 44.729 2.67817C44.729 3.89502 44.714 3.97014 44.3232 4.25557C43.9174 4.55603 43.692 4.57105 39.2436 4.55603C36.6737 4.55603 34.209 4.61612 33.7582 4.70626C33.3073 4.78137 32.4507 5.08183 31.8796 5.36726C31.2484 5.68274 30.512 6.20854 30.0311 6.68927C29.5953 7.12493 29.0392 7.8911 28.7837 8.38685C28.5433 8.88261 28.2427 9.66379 28.1225 10.1145C28.0022 10.5652 27.897 11.4215 27.897 11.9923C27.9121 12.5632 28.0022 13.4195 28.1074 13.8702C28.2126 14.3209 28.4982 15.087 28.7386 15.5678C28.9791 16.0485 29.5351 16.8147 29.9559 17.2654C30.4819 17.7912 31.1282 18.2569 31.8345 18.6024C32.4356 18.8878 33.3073 19.1883 33.7582 19.2784C34.209 19.3686 35.9223 19.4286 40.521 19.4286V16.5292C40.506 13.8852 40.536 13.6148 40.8065 13.2693C41.0771 12.9087 41.1672 12.8937 42.625 12.8937C44.0828 12.8937 44.1729 12.9087 44.4434 13.2693C44.729 13.6298 44.744 13.9002 44.729 22.7337L43.9024 23.4998L39.0933 23.4848C35.7119 23.4848 33.9535 23.4247 33.157 23.2745C32.5408 23.1543 31.6842 22.959 31.2784 22.8238C30.8727 22.6736 30.0912 22.3581 29.5652 22.0877C29.0542 21.8173 28.1675 21.2314 27.6115 20.7657C27.0705 20.315 26.289 19.5338 25.8982 19.038C25.4925 18.5573 24.9063 17.6109 24.5907 16.9499C24.2601 16.2889 23.8844 15.3124 23.7341 14.7716C23.5538 14.0955 23.4786 13.2543 23.4786 11.9923C23.4786 10.7304 23.5538 9.88914 23.7492 9.21311C23.8844 8.67229 24.2752 7.6958 24.5907 7.0348C24.9063 6.37379 25.4925 5.42735 25.8982 4.94662C26.289 4.45087 27.0705 3.66968 27.6115 3.21899C28.1675 2.75329 29.0542 2.16739 29.5652 1.89698C30.0912 1.62657 30.8576 1.31109 31.2784 1.17589Z" fill="black"/>
+								<path d="M0.5 1.23594L0.920799 0.875392L1.3416 0.499821H6.16576C9.72752 0.499821 11.2905 0.559912 12.1171 0.710141C12.7332 0.830323 13.5748 1.04064 13.9956 1.17585C14.4014 1.31105 15.1829 1.62653 15.7089 1.89695C16.2199 2.16736 17.1065 2.75325 17.6626 3.21896C18.2036 3.66964 18.9851 4.45083 19.3758 4.94658C19.7816 5.42732 20.3677 6.37375 20.6984 7.03476C21.014 7.69577 21.4047 8.67225 21.54 9.21307C21.7203 9.87408 21.7954 10.7604 21.7954 11.9923C21.7954 13.2392 21.7203 14.0955 21.54 14.7715C21.3897 15.3123 21.014 16.2888 20.6833 16.9498C20.3677 17.6108 19.7816 18.5573 19.3758 19.038C18.9851 19.5338 18.2036 20.315 17.6626 20.7656C17.1216 21.2313 16.2048 21.8323 15.6337 22.1177L15.5648 22.1503C15.0151 22.4107 14.4549 22.676 14.2962 22.7336C14.1309 22.8088 13.8303 22.8989 13.6199 22.959C13.4095 23.004 12.7332 23.1543 12.1171 23.2594C11.3055 23.4247 9.66741 23.4848 1.37166 23.4998L0.950856 23.1092C0.560114 22.7487 0.545086 22.6585 0.545086 21.3816C0.545086 20.0746 0.560114 20.0145 0.950856 19.7291C1.35663 19.4286 1.58205 19.4136 6.0305 19.4286C8.60038 19.4286 11.0651 19.3685 11.5159 19.2784C11.9668 19.2033 12.8535 18.8728 13.4696 18.5723C14.1309 18.2418 14.8673 17.731 15.2731 17.3254C15.6488 16.9348 16.1748 16.1987 16.4303 15.6879C16.7008 15.1922 17.0314 14.3809 17.1516 13.9152C17.2718 13.4345 17.377 12.5782 17.377 11.9923C17.377 11.4214 17.2718 10.5351 17.1366 10.0393C17.0164 9.54358 16.7308 8.77741 16.5054 8.32672C16.28 7.87604 15.769 7.15494 15.3482 6.71928C14.8523 6.2085 14.2211 5.75782 13.4696 5.39727C12.8535 5.09681 11.9668 4.79636 11.5159 4.70622C11.0651 4.61608 9.35181 4.55599 4.75308 4.55599V13.119L4.37736 13.4946C4.04673 13.8401 3.89645 13.8702 2.69417 13.8702C1.59708 13.8852 1.29651 13.8251 0.545086 13.2692L0.5 1.23594Z" fill="black"/>
+								<path d="M69.4512 0.980541L69.8269 0.755198C70.1575 0.544879 70.9691 0.514833 76.6649 0.559901C80.2266 0.574924 83.3977 0.665061 83.7283 0.740176C84.0589 0.830313 84.7653 1.10072 85.3063 1.34109C85.9224 1.62652 86.5837 2.10725 87.0796 2.61803C87.5455 3.08374 88.0866 3.8499 88.3571 4.40575C88.7779 5.27707 88.823 5.53246 88.823 6.80941C88.823 8.14644 88.7929 8.29667 88.297 9.21306C88.0114 9.75388 87.4704 10.52 87.0646 10.9407C86.6739 11.3463 86.3583 11.7219 86.3583 11.7669C86.3583 11.812 86.749 12.1125 87.2149 12.443C87.771 12.8336 88.2819 13.3594 88.6576 13.9453C88.9732 14.441 89.3039 15.117 89.394 15.4475C89.4692 15.778 89.5143 16.6193 89.4842 17.3254C89.4241 18.392 89.3339 18.7676 88.8981 19.6389C88.5524 20.33 88.1016 20.9309 87.5606 21.4417C87.0947 21.8623 86.4184 22.358 86.0577 22.5383C85.682 22.7186 85.141 22.9289 84.8554 23.0191C84.5699 23.0942 84.0589 23.2294 83.7283 23.3195C83.3526 23.4247 80.6625 23.4848 76.6649 23.4848C70.3829 23.4848 70.1876 23.4848 69.8569 23.1843C69.5564 22.9139 69.5263 22.7486 69.5263 21.5017C69.5263 20.3149 69.5864 20.0445 69.8419 19.7291C70.0072 19.5187 70.0974 19.4586 70.0373 19.5788C69.9471 19.7591 69.9772 19.7741 70.1425 19.6239C70.2928 19.4737 71.8107 19.4286 76.6949 19.4286C81.5041 19.4286 83.1271 19.3835 83.3826 19.2483C83.578 19.1432 83.9237 18.8878 84.1491 18.6775C84.3895 18.4671 84.6751 18.0615 84.7953 17.7761C84.9155 17.4906 85.0057 16.9949 85.0057 16.6944C85.0057 16.379 84.9306 15.9733 84.8404 15.7931C84.7352 15.5978 84.615 15.4175 84.5699 15.3724C84.5248 15.3274 84.4046 15.1771 84.3294 15.0269C84.2543 14.8617 83.8786 14.5762 83.5029 14.3659C82.8867 14.0204 82.6011 13.9753 80.4821 13.9002C78.2128 13.795 78.1226 13.78 77.807 13.4195C77.5516 13.119 77.5065 12.8336 77.4914 11.8871C77.4914 10.7454 77.5065 10.7003 77.9724 10.3398C78.4382 9.99425 78.5735 9.97923 80.4521 9.9642C81.8647 9.9642 82.5711 9.90411 82.8566 9.75388C83.0971 9.6337 83.4427 9.36329 83.6531 9.13795C83.8635 8.9126 84.119 8.49196 84.2092 8.17648C84.3144 7.87603 84.4046 7.47041 84.4046 7.26009C84.4046 7.04977 84.3144 6.64415 84.2092 6.3437C84.119 6.02822 83.8635 5.60758 83.6531 5.38224C83.4427 5.15689 83.037 4.88648 82.7514 4.7663C82.3306 4.60105 81.3237 4.55598 73.584 4.55598V8.98772C73.584 13.4195 73.584 13.4195 73.2534 13.6448C73.0129 13.8101 72.517 13.8701 71.5552 13.8701C70.5933 13.8701 70.0974 13.8101 69.5263 13.4195L69.4512 0.980541Z" fill="black"/>
+							</svg>
+						</a>
+						<div class="navbar-collapse">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="#">Услуги</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">О компании</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Отраслевые решения</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Контакты</a>
+								</li>
+							</ul>
+							<div class="nav-right">
+								<div class="dropdown">
+									<button class="dropdown-toggle" type="button" id="langDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+										<img src="images/flag-ru.png" alt="">
+										<span>RU</span>
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="langDropdown">
+										<li>
+											<a class="dropdown-item" href="#">
+												<img src="images/flag-ru.png" alt="">
+												<span>RU</span>
+											</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">
+												<img src="images/flag-en.png" alt="">
+												<span>EN</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="nav-tel">
+									<a href="tel:+74951500464">+7 495 150 04 64</a>
+								</div>
+							</div>
+						</div>
+					</nav>
 				</div>
 			</header>
 
-			<main>
+			<main class="main">
 				<section class="main-sec">
 					<div class="container">
-						<div class="row">
-							
+						<div class="main-block">
+							<div class="main-text">
+								<h1 class="h1">Профессиональная логистика <br>с итальянским качеством <br>и международной экспертизой</h1>
+								<p>Мы знаем, как доставить ваш груз безопасно и быстро</p>
+								<div class="main-btn">
+									<a href="#" class="blue-btn">Связаться с нами</a>
+								</div>
+							</div>
+
+							<div class="main-info">
+								<div class="row">
+									<div class="col-lg-4">
+										<div class="main-item">
+											<span class="value" akhi="60">0</span>
+											<p>лет опыта</p>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="main-item">
+											<span class="value" akhi="55">0</span>
+											<p>филлиалов</p>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="main-item">
+											<span class="value" akhi="21">0</span>
+											<p>страна</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="logistic-sec">
+					<div class="container-fluid">
+						<div class="logistic-block">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="logistic-left">
+										<span>Логистика с мировым мышлением и локальной точностью</span>
+										<p>Мы не просто говорим на языке страны –  мы думаем, как она, зная менталитет.</p>
+									</div>
+								</div>
+
+								<div class="col-lg-6">
+									<div class="logistic-right">
+										<div class="logistic-item">
+											<span>от 15 лет</span>
+											<p>стаж работы сотрудников</p>
+											<img src="images/logistic-item-img1.png" alt="">
+										</div>
+										<div class="logistic-item">
+											<span>150+</span>
+											<p>машин</p>
+											<img src="images/logistic-item-img2.png" alt="">
+										</div>
+										<div class="logistic-item">
+											<span>60 лет</span>
+											<p>международного опыта</p>
+											<img src="images/logistic-item-img3.png" alt="">
+										</div>
+										<div class="logistic-item">
+											<span>1000+</span>
+											<p>сотрудников с экспертизой <br>в локальных рынках</p>
+											<img src="images/logistic-item-img4.png" alt="">
+										</div>
+										<div class="logistic-item covered">
+											<div class="item-in">
+												<span>20+</span>
+												<p>складов консолидации <br>по всему миру </p>
+											</div>
+											<img src="images/logistic-item-img5.png" alt="">
+										</div>
+										<div class="logistic-item">
+											<span>55</span>
+											<p>офисов в 21 стране</p>
+											<img src="images/logistic-item-img6.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="delivery-sec">
+					<div class="container">
+						<div class="title">
+							<span class="h2">Доставим в кратчайшие сроки</span>
+						</div>
+
+						<div class="row gap-y-24">
+							<div class="col-lg-6">
+								<div class="delivery-block">
+									<div class="delivery-text">
+										<div class="delivery-tag">Авто</div>
+										<div class="delivery-info">
+											<p>Италия</p>
+											<span>7</span>
+											<p>Москва</p>
+										</div>
+										<div class="delivery-info">
+											<p>Франция</p>
+											<span>7</span>
+											<p>Москва</p>
+										</div>
+										<div class="delivery-info">
+											<p>Испания</p>
+											<span>7</span>
+											<p>Москва</p>
+										</div>
+										<div class="delivery-info">
+											<p>Германия</p>
+											<span>7</span>
+											<p>Москва</p>
+										</div>
+									</div>
+
+									<div class="delivery-img">
+										<img src="images/delivery-img1.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="delivery-block">
+									<div class="delivery-text">
+										<div class="delivery-tag">Морские</div>
+										<div class="delivery-info">
+											<p>Китай</p>
+											<span>30–35 дней</span>
+											<p>Владивосток</p>
+										</div>
+										<div class="delivery-info">
+											<p>Китай</p>
+											<span>40–45 дней</span>
+											<p>Санкт-Петербург</p>
+										</div>
+										<div class="delivery-info">
+											<p>ЮВ Азия</p>
+											<span>35–40 дней</span>
+											<p>Новороссийск</p>
+										</div>
+										<div class="delivery-info">
+											<p>Индия</p>
+											<span>35–38 дней</span>
+											<p>Санкт-Петербург</p>
+										</div>
+									</div>
+
+									<div class="delivery-img">
+										<img src="images/delivery-img2.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="delivery-block">
+									<div class="delivery-text">
+										<div class="delivery-tag">ЖД</div>
+										<div class="delivery-info">
+											<p>Китай</p>
+											<span>22 дня</span>
+											<p>Москва</p>
+										</div>
+										<div class="delivery-info">
+											<p>Китай</p>
+											<span>18-22 дней</span>
+											<p>Европа</p>
+										</div>
+										<div class="delivery-info">
+											<p>Южный Китай</p>
+											<span>8 дней</span>
+											<p>Екатеринбург</p>
+										</div>
+									</div>
+
+									<div class="delivery-img">
+										<img src="images/delivery-img3.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="delivery-block">
+									<div class="delivery-text">
+										<div class="delivery-tag">Авиа</div>
+										<div class="delivery-info">
+											<p>Китай</p>
+											<span>1-2 дня</span>
+											<p>Россия</p>
+										</div>
+										<div class="delivery-info">
+											<p>Европа</p>
+											<span>3-5 дней</span>
+											<p>Москва</p>
+										</div>
+										<div class="delivery-info">
+											<p>Италия</p>
+											<span>4-6 дней</span>
+											<p>Тайланд</p>
+										</div>
+									</div>
+
+									<div class="delivery-img">
+										<img src="images/delivery-img4.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="solution-sec">
+					<div class="container">
+						<div class="solution-block">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="solution-left">
+										<div class="title">
+											<span class="h2">Вы выбираете цель – мы подберем идеальное решение</span>
+										</div>
+										<div class="solution-img">
+											<img src="images/solution-img1.png" alt="" class="active">
+											<img src="images/solution-img2.png" alt="">
+											<img src="images/solution-img3.png" alt="">
+											<img src="images/solution-img4.png" alt="">
+											<img src="images/solution-img5.png" alt="">
+										</div>
+									</div>
+								</div>
+
+								<div class="col-lg-6">
+									<div class="sloution-right">
+										<div class="solution-item active">
+											<div class="item-num">(01)</div>
+											<div class="item-text">
+												<span>Автомобильные перевозки</span>
+												<div class="text-in">
+													<p>Сборные грузы (LTL) и полногруженные машины (FTL)  из Европы и Китая в Россию и СНГ</p>
+													<p>Собственная сборная линия LTL из Италии в Москву</p>
+													<p>Перевозка грузов с соблюдением температурного режима</p>
+													<p>Перевозка проектных, негабаритных и крупногабаритных грузов</p>
+												</div>
+												<a href="#">Перейти</a>
+											</div>
+										</div>
+										<div class="solution-item">
+											<div class="item-num">(02)</div>
+											<div class="item-text">
+												<span>Железнодорожные перевозки</span>
+												<div class="text-in">
+													<p>Полногруженные контейнеры(FCL) и сборные (LCL) из Китая и Юго-Восточной Азии в РФ</p>
+													<p>Перевозка проектных и негабаритных грузов</p>
+												</div>
+												<a href="#">Перейти</a>
+											</div>
+										</div>
+										<div class="solution-item">
+											<div class="item-num">(03)</div>
+											<div class="item-text">
+												<span>Морские перевозки</span>
+												<div class="text-in">
+													<p>Полногруженные контейнеры (FCL) и сборные контейнеры (LCL) импорт, экспорт, в разных направлениях</p>
+													<p>Перевозки с использованием специального оборудования: Flat-Rack, Open-Top</p>
+													<p>Перевозка проектных и негабаритных грузов</p>
+												</div>
+												<a href="#">Перейти</a>
+											</div>
+										</div>
+										<div class="solution-item">
+											<div class="item-num">(04)</div>
+											<div class="item-text">
+												<span>Авиа перевозки</span>
+												<div class="text-in">
+													<p>Международные и по России</p>
+													<p>Организация грузовых чартерных рейсов, доставка транзитных грузов</p>
+													<p>Перевозка опасных грузов</p>
+												</div>
+												<a href="#">Перейти</a>
+											</div>
+										</div>
+										<div class="solution-item">
+											<div class="item-num">(05)</div>
+											<div class="item-text">
+												<span>Дополнительные услуги</span>
+												<div class="text-in">
+													<p>Экспресс доставка</p>
+													<p>Логистические услуги (упаковка груза, проверка качества, маркировка и т.д.)</p>
+													<p>Содействие в таможенном оформлении и дополнительном страховании грузов</p>
+													<p>Консультационные услуги в ВЭД и логистики</p>
+													<p>Перевозки по процедуре таможенного транзита</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="content-sec">
+					<div class="container-fluid">
+						<div class="content-box">
+							<div class="title">
+								<span class="h2">Соединяем континенты, культуры  и компании через логистику</span>
+							</div>
+							<div class="row gap-y-24">
+								<div class="col-lg-6">
+									<div class="content-block">
+										<video controls autoplay muted disablePictureInPicture controlsList="nodownload">
+											<source type="video/mp4" src="images/content-img1.mp4">
+										</video>
+										<div class="content-text">
+											<span class="h4">По России</span>
+											<p>От Калининграда до Владивостока: мы знаем маршруты и лучшее решение.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="content-block">
+										<video controls autoplay muted disablePictureInPicture controlsList="nodownload">
+											<source type="video/mp4" src="images/content-img2.mp4">
+										</video>
+										<div class="content-text">
+											<span class="h4">Международные перевозки, импорт, экспорт и кросс трейд</span>
+											<p>55 филиалов по всему миру. Мы не просто знаем язык ваших стран, мы говорим на языке вашего бизнеса.</p>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -41,7 +420,7 @@
 		<script src="js/jquery-3.7.0.min.js"></script>
 		<script src="libs/bootstrap5/popper.js"></script>
 		<script src="libs/bootstrap5/bootstrap.min.js"></script>
-		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/smooth-scroll.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>
