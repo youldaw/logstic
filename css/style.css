@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: 'Manrope', sans-serif;
+}
+
+a, p, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+    text-decoration: none;
+    line-height: 1.2;
+}
+button:focus,
+textarea:focus,
+select:focus{
+	outline: none!important;
+	box-shadow: none;
+}
+input:focus{
+	outline: none!important;
+}
+a:active, a:focus {
+  outline: 0;
+  outline: none!important;
+  -moz-outline-style: none;
+}
+
+span, button, img, a {
+	transition: .3s all ease;
+}
+
+a, span, button {
+	display: inline-block;
+}
+
+.wrapper {
+	overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*@media only screen and (max-width: 480px){}*/
+
+
+
+
+
+
+
+
+/*@media only screen and (max-width: 480px){}*/
+
+
