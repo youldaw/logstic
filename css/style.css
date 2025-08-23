@@ -841,10 +841,51 @@ header.sticky .nav-right .dropdown-toggle span {
 	margin-bottom: 64px;
 }
 
-
-
-
-
+.tasks-item {
+	padding: 10px;
+	display: flex;
+	align-items: flex-start;
+	gap: 0 24px;
+	border-radius: 24px;
+	background-image: url('../images/tasks-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: rgb(22, 39, 82, 1);
+	position: relative;
+}
+.tasks-item::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(22, 39, 82, .8);
+	border-radius: 24px;
+}
+.tasks-left,
+.tasks-center,
+.tasks-right {
+	position: relative;
+	z-index: 2;
+	width: 100%;
+}
+.tasks-left {
+	border-radius: 16px;
+	padding: 24px;
+	max-width: 374px;
+	min-width: 374px;
+	background-color: #fff;
+}
+.tasks-center {
+	max-width: 360px;
+}
+.tasks-right {
+	border-radius: 16px;
+	padding: 16px;
+	border: 1px dashed #5A7196;
+}
 
 
 
