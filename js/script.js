@@ -44,89 +44,39 @@ $(function () {
 
 });
 
+SmoothScroll({
+    // Время скролла 400 = 0.4 секунды
+    animationTime    : 800,
+    // Размер шага в пикселях 
+    stepSize         : 75,
 
-//    $(window).on("scroll", function () {
-//         let secTop = $(".program-sec").offset().top;
-//         let secBottom = secTop + $(".program-sec").outerHeight();
-//         let scroll = $(window).scrollTop();
-//         let winHeight = $(window).height();
+    // Дополнительные настройки:
+    
+    // Ускорение 
+    accelerationDelta : 30,  
+    // Максимальное ускорение
+    accelerationMax   : 2,   
 
-//         if (scroll + winHeight > secTop + 100 && scroll < secBottom) {
-//             $(".program-left").addClass("active");
-//         } else {
-//             $(".program-left").removeClass("active");
-//         }
-//     });
+    // Поддержка клавиатуры
+    keyboardSupport   : true,  
+    // Шаг скролла стрелками на клавиатуре в пикселях
+    arrowScroll       : 50,
 
-//     $(window).on("scroll", function () {
-//         $(".program-right").each(function () {
-//             let elTop = $(this).offset().top;
-//             let elBottom = elTop + $(this).outerHeight();
-//             let scroll = $(window).scrollTop();
-//             let winHeight = $(window).height();
+    // Pulse (less tweakable)
+    // ratio of "tail" to "acceleration"
+    pulseAlgorithm   : true,
+    pulseScale       : 4,
+    pulseNormalize   : 1,
 
-//             // agar element ekranda ko‘rinsa
-//             if (scroll + winHeight > elTop + 100 && scroll < elBottom - 50) {
-//                 $(this).addClass("visible");
-//             } else {
-//                 $(this).removeClass("visible");
-//             }
-//         });
-//     });
+    // Поддержка тачпада
+    touchpadSupport   : true,
+})
 
-
-        // sticky sidebar
-        // $(document).ready(function () {
-        //     var $window = $(window);
-        //     var $sidebar = $(".sidebar-shou");
-        //     var $sidebarHeight = $sidebar.innerHeight();
-        //     var $footerOffsetTop = $(".similar-news").offset().top;
-        //     var $sidebarOffset = $sidebar.offset();
-
-        //     $window.scroll(function () {
-        //         if ($window.scrollTop() > $sidebarOffset.top) {
-        //             $sidebar.addClass("fixed");
-        //         } else {
-        //             $sidebar.removeClass("fixed");
-        //         }
-        //         if ($window.scrollTop() + $sidebarHeight > $footerOffsetTop) {
-        //             $sidebar.css({ "top": -($window.scrollTop() + $sidebarHeight - $footerOffsetTop) });
-        //         } else {
-        //             $sidebar.css({ "top": "42px", });
-        //         }
-        //     });
-        // });
-
-
-// $(document).ready(function () {
-//   const items = $(".solution-item");
-//   const images = $(".solution-img img");
-
-//   function checkActive() {
-//     let windowMiddle = $(window).scrollTop() + $(window).height() / 2;
-
-//     items.each(function (i) {
-//       let itemTop = $(this).offset().top;
-//       let itemBottom = itemTop + $(this).outerHeight();
-
-//       if (windowMiddle >= itemTop && windowMiddle < itemBottom) {
-//         items.removeClass("active");
-//         $(this).addClass("active");
-
-//         images.removeClass("active").eq(i).addClass("active");
-//       }
-//     });
-//   }
-
-//   $(window).on("scroll", checkActive);
-//   checkActive(); // sahifa ochilganda ham tekshir
-// });
 
 
 $(document).ready(function () {
   const items = $(".solution-item");
   const images = $(".solution-img img");
-  let scrollTimeout;
 
   function checkActive() {
     let windowMiddle = $(window).scrollTop() + $(window).height() / 2;
@@ -146,10 +96,11 @@ $(document).ready(function () {
     });
   }
 
-  $(window).on("scroll", function () {
-    clearTimeout(scrollTimeout);
-    scrollTimeout = setTimeout(checkActive, 100); // 100ms keyin ishlaydi
-  });
+  // scroll eventda darhol tekshir
+  $(window).on("scroll", checkActive);
 
   checkActive(); // sahifa yuklanganda ham ishlasin
+  
 });
+
+
