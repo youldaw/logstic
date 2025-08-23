@@ -233,6 +233,10 @@ header.sticky .nav-right .dropdown-toggle span {
 	color: #fff;
 	min-width: 190px;
 }
+.blue-btn:hover {
+	background: #ffffff;
+	color: #1E47AE;
+}
 
 .main-info {
 	margin-top: 230px;
@@ -812,10 +816,30 @@ header.sticky .nav-right .dropdown-toggle span {
 	border-radius: 24px;
 	background: #fff;
 }
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+.tag {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: #1E2A3E;
+	border-radius: 8px;
+	padding: 11px 23px;
+	border: 1px solid #162752;
+}
+.tag:hover {
+	background: #162752;
+	color: #fff;
+}
 
-
-
-
+.tasks-block .tags {
+	max-width: 770px;
+	width: 100%;
+	margin-bottom: 64px;
+}
 
 
 
