@@ -38,7 +38,22 @@ $(function () {
     });
 
 
+    $(".bgVideo").each(function () {
+        const video = this;
 
+        // Tugaganida qayta o‘ynatish
+        $(video).on("ended", function () {
+        video.currentTime = 0;
+        video.play();
+        });
+
+        // Har ehtimolga qarshi (iOS’da ba’zan pause bo‘lib qoladi)
+        setInterval(() => {
+        if (video.paused) {
+            video.play().catch(() => {});
+        }
+        }, 3000);
+    });
 
 
 
